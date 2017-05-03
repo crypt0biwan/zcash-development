@@ -1,0 +1,33 @@
+---
+- name: debian64
+  vmw_box: debian/jessie64
+  vb_box: debian/jessie64
+  ram: 2048
+  vcpu: 1
+  script: provision/bootstrap_debian.sh
+  zecversion: v1.0.8-1  
+
+- name: trusty64
+  vmw_box: ubuntu/trusty64
+  vb_box: ubuntu/trusty64
+  ram: 2048
+  vcpu: 1
+  script: provision/bootstrap_ubuntu.sh
+  zecversion: v1.0.8-1 
+
+- name: xenial64
+  vmw_box: ubuntu/xenial64
+  vb_box: ubuntu/xenial64
+  ram: 2048
+  vcpu: 1
+  script: provision/bootstrap_ubuntu.sh
+  zecversion: v1.0.8-1  
+
+- name: centos64
+  vmw_box: centos/7
+  vb_box: centos/7
+  ram: 2048
+  vcpu: 1
+  script: provision/bootstrap_centos.sh
+  zecversion: v1.0.8-1 
+

@@ -1,0 +1,16 @@
+---
+- name: centos64
+  vmw_box: centos/7
+  vb_box: centos/7
+  ram: 3072
+  vcpu: 2
+  script: provision/bootstrap_centos.sh
+  zecversion: v1.0.8-1
+  
+- name: xenial64
+  vmw_box: ubuntu/xenial64
+  vb_box: ubuntu/xenial64
+  ram: 3072
+  vcpu: 2
+  script: provision/bootstrap_ubuntu.sh
+  zecversion: v1.0.8-1    
